@@ -309,53 +309,51 @@
           </div>
           <div id="transferDetails" class="col-sm-12 col-md-5 col-lg-5" style="display: none">
             <h4>Selected transfer details</h4>
-            <dl class="dl-horizontal">
-              <dt>Departure</dt>
-              <dd><abbr id="departureTime"></abbr></dd>
-              <dt>Arrival</dt>
-              <dd><abbr id="arrivalTime"></abbr></dd>
-              <dt>Time of flight</dt>
-              <dd><abbr id="timeOfFlight"></abbr></dd>
-              <dt>Phase angle</dt>
-              <dd id="phaseAngle"></dd>
-              <dt class="ejectionAngle">Ejection angle</dt>
-              <dd id="ejectionAngle" class="ejectionAngle"></dd>
-              <dt class="ballisticTransfer">Ejection inclination</dt>
-              <dd id="ejectionInclination" class="ballisticTransfer"></dd>
-              <dt>Ejection &#916;v</dt>
-              <dd>
+            <table class="dl-horizontal">
+              <tr><td>Departure</td>
+              <td><abbr id="departureTime"></abbr></td></tr>
+              <tr><td>Arrival</td>
+              <td><abbr id="arrivalTime"></abbr></td></tr>
+              <tr><td>Time of flight</td>
+              <td><abbr id="timeOfFlight"></abbr></td></tr>
+              <tr><td>Phase angle</td>
+              <td id="phaseAngle"></td></tr>
+              <tr><td class="ejectionAngle">Ejection angle</td>
+              <td id="ejectionAngle" class="ejectionAngle"></td></tr>
+              <tr><td class="ballisticTransfer">Ejection inclination</td>
+              <td id="ejectionInclination" class="ballisticTransfer"></td></tr>
+              <tr><td>Ejection &#916;v</td>
+              <td>
                 <span id="ejectionDeltaV"></span>
                 <a id="ejectionDeltaVInfo" class="glyphicon glyphicon-info-sign" href="#" data-toggle="popover" data-placement="bottom" title="Ejection burn details"></a>
-              </dd>
-              <dt>Transfer periapsis</dt>
-              <dd id="transferPeriapsis"></dd>
-              <dt>Transfer apoapsis</dt>
-              <dd id="transferApoapsis"></dd>
-              <dt class="ballisticTransfer">Transfer inclination</dt>
-              <dd id="transferInclination" class="ballisticTransfer"></dd>
-              <dt>Transfer angle</dt>
-              <dd id="transferAngle"></dd>
-              <dt class="planeChangeTransfer">Plane change time</dt>
-              <dd class="planeChangeTransfer"><abbr id="planeChangeTime"></abbr></dd>
-              <dt class="planeChangeTransfer">Angle to intercept</dt>
-              <dd id="planeChangeAngleToIntercept" class="planeChangeTransfer"></dd>
-              <dt class="planeChangeTransfer">Plane change angle</dt>
-              <dd id="planeChangeAngle" class="planeChangeTransfer"></dd>
-              <dt class="planeChangeTransfer">Plane change &#916;v</dt>
-              <dd class="planeChangeTransfer"><abbr id="planeChangeDeltaV"></abbr></dd>
-              <dt>Insertion inclination</dt>
-              <dd id="insertionInclination"></dd>
-              <dt>Insertion &#916;v</dt>
-              <dd id="insertionDeltaV"></dd>
-              <dt>Total &#916;v</dt>
-              <dd id="totalDeltaV"></dd>
-              <dd>
-                <button id="refineTransferBtn" type="button" class="btn btn-default">
-                  <span class="glyphicon glyphicon-resize-small"></span>
-                  Refine transfer
-                </button>
-              </dd>
-            </dl>
+              </td></tr>
+              <tr><td>Transfer periapsis</td>
+              <td id="transferPeriapsis"></td></tr>
+              <tr><td>Transfer apoapsis</td>
+              <td id="transferApoapsis"></td></tr>
+              <tr><td class="ballisticTransfer">Transfer inclination</td>
+              <td id="transferInclination" class="ballisticTransfer"></td></tr>
+              <tr><td>Transfer angle</td>
+              <td id="transferAngle"></td></tr>
+              <tr><td class="planeChangeTransfer">Plane change time</td>
+              <td class="planeChangeTransfer"><abbr id="planeChangeTime"></abbr></td></tr>
+              <tr><td class="planeChangeTransfer">Angle to intercept</td>
+              <td id="planeChangeAngleToIntercept" class="planeChangeTransfer"></td></tr>
+              <tr><td class="planeChangeTransfer">Plane change angle</td>
+              <td id="planeChangeAngle" class="planeChangeTransfer"></td></tr>
+              <tr><td class="planeChangeTransfer">Plane change &#916;v</td>
+              <td class="planeChangeTransfer"><abbr id="planeChangeDeltaV"></abbr></td></tr>
+              <tr><td>Insertion inclination</td>
+              <td id="insertionInclination"></td></tr>
+              <tr><td>Insertion &#916;v</td>
+              <td id="insertionDeltaV"></td></tr>
+              <tr><td>Total &#916;v</td>
+              <td id="totalDeltaV"></td></tr>
+            </table>
+            <button id="refineTransferBtn" type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-resize-small"></span>
+              Refine transfer
+            </button>
           </div>
         </div>
         <div class="row">
